@@ -15,6 +15,7 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`Exploratory_Data_Analysis_Assignment.ipynb`](Exploratory_Data_Analysis_Assignment.ipynb) | **Exploratory Data Analysis (EDA)** | End-to-end analytics on automotive dataset: schema cleaning, deduplication, IQR outlier detection, univariate/bivariate visualizations, and multivariate correlation heatmaps. | ✅ **100% Complete** |
 | [`Cars_data_.csv`](Cars_data_.csv) | **Dataset** | Kaggle Car Features and MSRP dataset used for the EDA assignment. | 📊 **Included** |
 | [`Employee Dataset.csv`](Employee%20Dataset.csv) | **Dataset** | Employee dataset containing demographics, lifestyle metrics, and salary data. | 📊 **Included** |
+| [`Wine Quality Dataset.csv`](Wine%20Quality%20Dataset.csv) | **Dataset** | Physicochemical properties and sensory quality scores of wine samples. | 📊 **Included** |
 
 ---
 
