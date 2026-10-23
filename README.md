@@ -1,6 +1,6 @@
-# Chapter 8: Complete Python Assignments & Data Analytics Portfolio
+# Python & EDA Projects: Complete Assignments & Data Analytics Portfolio
 
-This repository contains all completed and fully executed assignment notebooks for the **Chapter 8 Python Assignments** series in the Data Analyst Fellowship curriculum.
+This repository contains all completed and fully executed assignment notebooks and datasets for Python programming, NumPy, Pandas, and Exploratory Data Analysis (EDA).
 
 ---
 
@@ -57,8 +57,8 @@ This repository contains all completed and fully executed assignment notebooks f
 
 ```bash
 # Clone the repository
-git clone https://github.com/wilson0812/Chapter-8-Python-Assignment.git
-cd Chapter-8-Python-Assignment
+git clone https://github.com/wilson0812/Python-EDA-Projects.git
+cd Python-EDA-Projects
 
 # Install data science dependencies
 pip install numpy pandas matplotlib seaborn scipy jupyter
