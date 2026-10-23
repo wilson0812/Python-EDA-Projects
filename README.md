@@ -14,6 +14,7 @@ This repository contains all completed and fully executed assignment notebooks f
 | [`Pandas_Advanced_Assignment.ipynb`](Pandas_Advanced_Assignment.ipynb) | **Pandas Advanced Analytics** | Series, DataFrames, boolean filtering, temperature thresholding, concatenation (`pd.concat`), and applying functions (`.apply()`). | ✅ **100% Complete** |
 | [`Exploratory_Data_Analysis_Assignment.ipynb`](Exploratory_Data_Analysis_Assignment.ipynb) | **Exploratory Data Analysis (EDA)** | End-to-end analytics on automotive dataset: schema cleaning, deduplication, IQR outlier detection, univariate/bivariate visualizations, and multivariate correlation heatmaps. | ✅ **100% Complete** |
 | [`Cars_data_.csv`](Cars_data_.csv) | **Dataset** | Kaggle Car Features and MSRP dataset used for the EDA assignment. | 📊 **Included** |
+| [`Employee Dataset.csv`](Employee%20Dataset.csv) | **Dataset** | Employee dataset containing demographics, lifestyle metrics, and salary data. | 📊 **Included** |
 
 ---
 
