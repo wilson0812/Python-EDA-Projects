@@ -15,9 +15,11 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`Exploratory_Data_Analysis_Assignment.ipynb`](Exploratory_Data_Analysis_Assignment.ipynb) | **Exploratory Data Analysis (EDA)** | End-to-end analytics on automotive dataset: schema cleaning, deduplication, IQR outlier detection, univariate/bivariate visualizations, and multivariate correlation heatmaps. | ✅ **100% Complete** |
 | [`Wine Assignment.ipynb`](Wine%20Assignment.ipynb) | **Statistics & Central Tendency** | Analysis of wine characteristics, distributions, mean, median, mode, skewness, and representative acid series. | ✅ **100% Complete** |
 | [`EMPLOYEE ASSIGNMENT 2.ipynb`](EMPLOYEE%20ASSIGNMENT%202.ipynb) | **Employee Analytics & Visuals** | Employee demographic analysis, lifestyle ratings, salary distributions, count plots, and conditional subsets. | ✅ **100% Complete** |
+| [`Statistics Advanced Assignment.ipynb`](Statistics%20Advanced%20Assignment.ipynb) | **Telecommunication Industry Statistics** | Applied statistics on phone specs: multi-criteria logical filtering, resolution & screen calculations, distributions, and variability analysis. | ✅ **100% Complete** |
 | [`Cars_data_.csv`](Cars_data_.csv) | **Dataset** | Kaggle Car Features and MSRP dataset used for the EDA assignment. | 📊 **Included** |
 | [`Employee Dataset.csv`](Employee%20Dataset.csv) | **Dataset** | Employee dataset containing demographics, lifestyle metrics, and salary data. | 📊 **Included** |
 | [`Wine Quality Dataset.csv`](Wine%20Quality%20Dataset.csv) | **Dataset** | Physicochemical properties and sensory quality scores of wine samples. | 📊 **Included** |
+| [`Telecom Dataset.csv`](Telecom%20Dataset.csv) | **Dataset** | Mobile phone specifications, hardware metrics, and price data. | 📊 **Included** |
 
 ---
 
@@ -53,6 +55,12 @@ This repository contains all completed and fully executed assignment notebooks a
   - *Univariate*: Distplots, KDE curves on a $2 \times 3$ grid, and top 40 manufacturer bar plots.
   - *Bivariate*: Scatter plots of HP vs. Price, bar plots across cylinder counts, and horizontal transmission plots.
   - *Multivariate*: Pearson correlation matrix rendered via an annotated Seaborn heatmap (`'BrBG'` colormap).
+
+### 6. Telecommunication Industry Analysis (`Statistics Advanced Assignment.ipynb`)
+- **Feature Engineering**: Computing total pixel resolution (`Px = Px_h * Px_w`) and diagonal screen size (`Scr_d = sqrt(Scr_h^2 + Scr_w^2)`).
+- **Statistical Distributions & Thresholding**: Analyzing mean, median, quartiles across hardware specs (Cameras, RAM, Battery, Internal Memory, Weight, Depth) with overlaid histogram distribution curves.
+- **Multi-Criteria Decision Filtering**: Applying 6 logical conditions (`con1` through `con6`) to filter 50 phones down to the top 3 optimal recommendations (`TVF078Y`, `WZB298K`, `TYS938L`).
+- **Variability & Coefficient of Variation**: Measuring relative dispersion ($\sigma / \mu$) across all numerical features to evaluate hardware vs. pricing volatility.
 
 ---
 
