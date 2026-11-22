@@ -17,10 +17,10 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`EMPLOYEE ASSIGNMENT 2.ipynb`](EMPLOYEE%20ASSIGNMENT%202.ipynb) | **Employee Analytics & Visuals** | Employee demographic analysis, lifestyle ratings, salary distributions, count plots, and conditional subsets. | ✅ **100% Complete** |
 | [`Statistics Advanced Assignment.ipynb`](Statistics%20Advanced%20Assignment.ipynb) | **Telecommunication Industry Statistics** | Applied statistics on phone specs: multi-criteria logical filtering, resolution & screen calculations, distributions, and variability analysis. | ✅ **100% Complete** |
 | [`Hypothesis_Testing_Assignment.ipynb`](Hypothesis_Testing_Assignment.ipynb) | **Inferential Statistics & Hypothesis Testing** | Null vs. Alternate hypotheses, Rejection Region approach (Z-tests), Type I/II error trade-offs, and P-value t-tests (Welch's t-test). | ✅ **100% Complete** |
-| [`Excel_PivotTable_and_Sales_Dashboard_Analysis.ipynb`](Excel_PivotTable_and_Sales_Dashboard_Analysis.ipynb) | **Excel Pivot Tables & BI Dashboard** | Programmatic audit, exact pivot table replication, calculated fields (GST 18%), dynamic target/metric modeling, and high-resolution BI visual dashboard. | ✅ **100% Complete** |
-| [`Excel_Data_Wrangling_and_Employee_Master_Analysis.ipynb`](Excel_Data_Wrangling_and_Employee_Master_Analysis.ipynb) | **Excel Data Wrangling & Payroll Master** | Multi-table appending, VLOOKUP/XLOOKUP relational mapping, text extraction (`EmpID` & `EmpDomain`), bonus formulations, and workforce analytics. | ✅ **100% Complete** |
-| [`PivotTable_Visual.xlsx`](PivotTable_Visual.xlsx) | **Excel Interactive BI Workbook** | Dynamic Pivot Tables, 18% GST Calculated Fields, Date Filters, Checkbox Variance (`Target_Left`), Dropdown Metric Selector, and Executive Dashboard. | 📊 **Included** |
-| [`Employees.xlsx`](Employees.xlsx) | **Excel Data Wrangling Workbook** | Completed 110-employee master dataset (`Sheet1`), VLOOKUP reference tables (`DepartmentData`), incoming cohorts (`MoreEmployees`), and payroll formulas. | 📊 **Included** |
+| [`Excel_PivotTable_and_Sales_Dashboard_Analysis.ipynb`](Excel_PivotTable_and_Sales_Dashboard_Analysis.ipynb) | **Pivot Tables & Sales Dashboard** | Programmatic audit, exact pivot table replication, calculated fields (GST 18%), dynamic target/metric modeling, and high-resolution BI visual dashboard. | ✅ **100% Complete** |
+| [`Excel_Data_Wrangling_and_Employee_Master_Analysis.ipynb`](Excel_Data_Wrangling_and_Employee_Master_Analysis.ipynb) | **Employee Data Wrangling & Payroll Master** | Multi-table appending, VLOOKUP/XLOOKUP relational mapping, text extraction (`EmpID` & `EmpDomain`), bonus formulations, and workforce analytics. | ✅ **100% Complete** |
+| [`Sales_Data.csv`](Sales_Data.csv) | **Dataset** | Sales transactions dataset containing regional sales, quantities, unit prices, and targets. | 📊 **Included** |
+| [`Employee_Master_Dataset.csv`](Employee_Master_Dataset.csv) | **Dataset** | Comprehensive 110-employee master dataset with parsed email IDs, departments, bonuses, and locations. | 📊 **Included** |
 | [`Cars_data_.csv`](Cars_data_.csv) | **Dataset** | Kaggle Car Features and MSRP dataset used for the EDA assignment. | 📊 **Included** |
 | [`Employee Dataset.csv`](Employee%20Dataset.csv) | **Dataset** | Employee dataset containing demographics, lifestyle metrics, and salary data. | 📊 **Included** |
 | [`Wine Quality Dataset.csv`](Wine%20Quality%20Dataset.csv) | **Dataset** | Physicochemical properties and sensory quality scores of wine samples. | 📊 **Included** |
@@ -73,8 +73,8 @@ This repository contains all completed and fully executed assignment notebooks a
 - **Error Analysis (Type I vs. Type II)**: Detailed case studies in medical diagnostics, criminal justice jurisprudence, and manufacturing quality control evaluating false positive ($\alpha$) vs. false negative ($\beta$) cost asymmetry.
 - **P-Value Approach & Welch's T-Test**: Executing two-sample independent t-tests and Welch's t-test with unequal variances to evaluate athletic training performance and educational interventions.
 
-### 8. Excel Pivot Tables & Sales Intelligence Dashboard (`PivotTable_Visual.xlsx` & `Excel_PivotTable_and_Sales_Dashboard_Analysis.ipynb`)
-- **Pivot Table Cache & Date Slicers**: Temporal isolation via Excel's date filter (`2023-09-01` to `2023-12-31`), isolating 72 retail transactions totaling ₹228,478.00.
+### 8. Pivot Tables & Sales Visual Dashboard (`Excel_PivotTable_and_Sales_Dashboard_Analysis.ipynb`)
+- **Pivot Table Cache & Date Filtering**: Temporal isolation via date filtering (`2023-09-01` to `2023-12-31`), isolating 72 retail transactions totaling ₹228,478.00.
 - **Calculated Fields (GST 18%)**: Automatic tax liability modeling directly in the Pivot Table engine:
   - $\text{Total\_Sales\_GST} = \text{Total\_Sales} \times 1.18$
   - $\text{GST\_Value} = \text{Total\_Sales} \times 0.18$
@@ -88,10 +88,10 @@ This repository contains all completed and fully executed assignment notebooks a
   - Dynamic metric selection formula: `=CHOOSE(Index, Sales, Quantity, UnitPrice)`.
   - Executive 4-panel BI Dashboard figure combining regional, category, and product intelligence.
 
-### 9. Excel Data Wrangling & Master Consolidation (`Employees.xlsx` & `Excel_Data_Wrangling_and_Employee_Master_Analysis.ipynb`)
-- **Multi-Table Appending & Master Standardization**: Appending incoming cohort (`MoreEmployees`: New Employee 101 to 110) to baseline records (`EmpTable`: Employee 1 to 100) into a unified master roster (`Sheet1`) of 110 personnel.
+### 9. Employee Data Wrangling & Payroll Master (`Excel_Data_Wrangling_and_Employee_Master_Analysis.ipynb`)
+- **Multi-Table Appending & Master Standardization**: Appending incoming cohort (New Employee 101 to 110) to baseline records (Employee 1 to 100) into a unified master roster of 110 personnel.
 - **Text Functions & String Parsing**: Extracting username `EmpID` (`=LEFT(...)`) and domain `EmpDomain` (`=RIGHT(...)`) from employee emails with fallback handling for unassigned records.
-- **Relational Lookups (`VLOOKUP` / `XLOOKUP`)**: Linking department reference table (`DepartmentData`) to assign `Department Head` (Alice, Bob, Charlie, Diana, Ethan) and branch `Location` (Mumbai, Delhi, Bangalore, Hyderabad, Pune).
+- **Relational Lookups (`VLOOKUP` / `XLOOKUP`)**: Linking department reference data to assign `Department Head` (Alice, Bob, Charlie, Diana, Ethan) and branch `Location` (Mumbai, Delhi, Bangalore, Hyderabad, Pune).
 - **Payroll & Compensation Modeling**:
   - Exact bonus calculation: $\text{Bonus Amount} = \text{Salary} \times \text{Bonus \%}$.
   - Total compensation analysis: $\text{Total Comp} = \text{Salary} + \text{Bonus Amount}$.
