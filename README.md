@@ -17,6 +17,8 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`EMPLOYEE ASSIGNMENT 2.ipynb`](EMPLOYEE%20ASSIGNMENT%202.ipynb) | **Employee Analytics & Visuals** | Employee demographic analysis, lifestyle ratings, salary distributions, count plots, and conditional subsets. | ✅ **100% Complete** |
 | [`Statistics Advanced Assignment.ipynb`](Statistics%20Advanced%20Assignment.ipynb) | **Telecommunication Industry Statistics** | Applied statistics on phone specs: multi-criteria logical filtering, resolution & screen calculations, distributions, and variability analysis. | ✅ **100% Complete** |
 | [`Hypothesis_Testing_Assignment.ipynb`](Hypothesis_Testing_Assignment.ipynb) | **Inferential Statistics & Hypothesis Testing** | Null vs. Alternate hypotheses, Rejection Region approach (Z-tests), Type I/II error trade-offs, and P-value t-tests (Welch's t-test). | ✅ **100% Complete** |
+| [`Excel_PivotTable_and_Sales_Dashboard_Analysis.ipynb`](Excel_PivotTable_and_Sales_Dashboard_Analysis.ipynb) | **Excel Pivot Tables & BI Dashboard** | Programmatic audit, exact pivot table replication, calculated fields (GST 18%), dynamic target/metric modeling, and high-resolution BI visual dashboard. | ✅ **100% Complete** |
+| [`PivotTable_Visual.xlsx`](PivotTable_Visual.xlsx) | **Excel Interactive BI Workbook** | Dynamic Pivot Tables, 18% GST Calculated Fields, Date Filters, Checkbox Variance (`Target_Left`), Dropdown Metric Selector, and Executive Dashboard. | 📊 **Included** |
 | [`Cars_data_.csv`](Cars_data_.csv) | **Dataset** | Kaggle Car Features and MSRP dataset used for the EDA assignment. | 📊 **Included** |
 | [`Employee Dataset.csv`](Employee%20Dataset.csv) | **Dataset** | Employee dataset containing demographics, lifestyle metrics, and salary data. | 📊 **Included** |
 | [`Wine Quality Dataset.csv`](Wine%20Quality%20Dataset.csv) | **Dataset** | Physicochemical properties and sensory quality scores of wine samples. | 📊 **Included** |
@@ -68,6 +70,21 @@ This repository contains all completed and fully executed assignment notebooks a
 - **Z-Test Implementation & Rejection Regions**: Conducting 1-sample and 2-sample Z-tests at $\alpha=0.05$ and $\alpha=0.01$ with critical value boundaries and shaded normal rejection curves.
 - **Error Analysis (Type I vs. Type II)**: Detailed case studies in medical diagnostics, criminal justice jurisprudence, and manufacturing quality control evaluating false positive ($\alpha$) vs. false negative ($\beta$) cost asymmetry.
 - **P-Value Approach & Welch's T-Test**: Executing two-sample independent t-tests and Welch's t-test with unequal variances to evaluate athletic training performance and educational interventions.
+
+### 8. Excel Pivot Tables & Sales Intelligence Dashboard (`PivotTable_Visual.xlsx` & `Excel_PivotTable_and_Sales_Dashboard_Analysis.ipynb`)
+- **Pivot Table Cache & Date Slicers**: Temporal isolation via Excel's date filter (`2023-09-01` to `2023-12-31`), isolating 72 retail transactions totaling ₹228,478.00.
+- **Calculated Fields (GST 18%)**: Automatic tax liability modeling directly in the Pivot Table engine:
+  - $\text{Total\_Sales\_GST} = \text{Total\_Sales} \times 1.18$
+  - $\text{GST\_Value} = \text{Total\_Sales} \times 0.18$
+- **Visual Analytics Suite**:
+  - *Column Chart*: 3D Clustered Column analysis breaking down base sales vs. tax burden across East (₹66,826), North (₹64,364), South (₹53,348), and West (₹43,940).
+  - *Pie Chart*: 3D Donut breakdown displaying category shares led by Food (26.54%) and Electronics (23.16%).
+  - *Combo Chart*: Dual-axis visualization assessing base revenue alongside GST growth.
+  - *Bar Chart*: Horizontal ranking of all 15 catalog items, identifying Bread (₹27,166) and Fiction (₹24,134) as primary revenue leaders.
+- **Dynamic Interactive Controls**:
+  - Dynamic Target tracking formula: `=IF(Checkbox=TRUE, Target - Total_Sales, NA())`.
+  - Dynamic metric selection formula: `=CHOOSE(Index, Sales, Quantity, UnitPrice)`.
+  - Executive 4-panel BI Dashboard figure combining regional, category, and product intelligence.
 
 ---
 
