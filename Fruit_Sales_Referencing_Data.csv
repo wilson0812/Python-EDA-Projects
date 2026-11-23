@@ -1,0 +1,6 @@
+Fruits,Quantity,Unit Price,Date Sold,Total Sales,Discount Value,Net Sales
+Apples,10,15,2024-06-01,150.0,27.00,123.00
+Bananas,15,10,2024-06-02,150.0,27.00,123.00
+Cherries,7,12,2024-06-03,84.0,15.12,68.88
+Dates,20,18,2024-06-04,360.0,64.80,295.20
+Oranges,5,14,2024-06-05,70.0,12.60,57.40

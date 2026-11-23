@@ -21,12 +21,14 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`Excel_Data_Wrangling_and_Employee_Master_Analysis.ipynb`](Excel_Data_Wrangling_and_Employee_Master_Analysis.ipynb) | **Employee Data Wrangling & Payroll Master** | Multi-table appending, VLOOKUP/XLOOKUP relational mapping, text extraction (`EmpID` & `EmpDomain`), bonus formulations, and workforce analytics. | ✅ **100% Complete** |
 | [`Pivot_and_Unpivot_Data_Reshaping_Assignment.ipynb`](Pivot_and_Unpivot_Data_Reshaping_Assignment.ipynb) | **Pivot & Unpivot Data Reshaping** | Wide-to-long transformation (`pd.melt`), long-to-wide reconstruction (`pivot_table`), QoQ growth modeling, employee sales rankings, and visual heatmaps. | ✅ **100% Complete** |
 | [`PowerQuery_Data_Cleaning_and_Wrangling_Assignment.ipynb`](PowerQuery_Data_Cleaning_and_Wrangling_Assignment.ipynb) | **Power Query & Data Cleaning** | Text trimming, error value imputation, email feature extraction (`EmpID` & `EmpDomain`), query appending, relational merging, and payroll metrics. | ✅ **100% Complete** |
+| [`Excel_Basics_Cell_Referencing_Assignment.ipynb`](Excel_Basics_Cell_Referencing_Assignment.ipynb) | **Excel Basics: Cell Referencing** | Relative (`B2*C2`), Absolute (`$F$9`), and Mixed (`=$E2-$F2`) cell referencing mechanics, discount deductions, and product sales analytics. | ✅ **100% Complete** |
 | [`Sales_Data.csv`](Sales_Data.csv) | **Dataset** | Sales transactions dataset containing regional sales, quantities, unit prices, and targets. | 📊 **Included** |
 | [`Employee_Master_Dataset.csv`](Employee_Master_Dataset.csv) | **Dataset** | Comprehensive 110-employee master dataset with parsed email IDs, departments, bonuses, and locations. | 📊 **Included** |
 | [`Quarterly_Sales_Data.csv`](Quarterly_Sales_Data.csv) | **Dataset** | Quarterly sales records across 5 sales representatives in wide cross-tabulated format. | 📊 **Included** |
 | [`Quarterly_Sales_Unpivoted.csv`](Quarterly_Sales_Unpivoted.csv) | **Dataset** | Normalized long-format tidy sales records (`[Employee, Quarter, Sales]`). | 📊 **Included** |
 | [`PowerQuery_Employee_RawData.csv`](PowerQuery_Employee_RawData.csv) | **Dataset** | Uncleaned raw employee dataset containing whitespace noise, `#ERROR` values, and unassigned departments. | 📊 **Included** |
 | [`PowerQuery_Cleaned_Master_Dataset.csv`](PowerQuery_Cleaned_Master_Dataset.csv) | **Dataset** | Fully cleaned and consolidated 110-employee master dataset with joined organizational hierarchies. | 📊 **Included** |
+| [`Fruit_Sales_Referencing_Data.csv`](Fruit_Sales_Referencing_Data.csv) | **Dataset** | Retail fruit transactions dataset tracking quantities, unit pricing, discounts, and net realizations. | 📊 **Included** |
 | [`Cars_data_.csv`](Cars_data_.csv) | **Dataset** | Kaggle Car Features and MSRP dataset used for the EDA assignment. | 📊 **Included** |
 | [`Employee Dataset.csv`](Employee%20Dataset.csv) | **Dataset** | Employee dataset containing demographics, lifestyle metrics, and salary data. | 📊 **Included** |
 | [`Wine Quality Dataset.csv`](Wine%20Quality%20Dataset.csv) | **Dataset** | Physicochemical properties and sensory quality scores of wine samples. | 📊 **Included** |
@@ -116,6 +118,12 @@ This repository contains all completed and fully executed assignment notebooks a
 - **Feature Parsing & Query Appends**: Extracting `EmpID` handles and `EmpDomain` hosts from emails, followed by appending incoming employee cohorts into a 110-person workforce roster.
 - **Relational Joins & Payroll Metrics**: Executing left outer joins against departmental lookup tables to map leadership and branch locations, and engineering calculated fields for bonuses, total compensation, and tenure.
 - **Workforce Analytics Dashboard**: Delivering multi-panel visualizations covering departmental headcount distributions, regional payroll allocations, and tenure metrics.
+
+### 12. Excel Basics & Cell Referencing Paradigms (`Excel_Basics_Cell_Referencing_Assignment.ipynb`)
+- **Referencing Architecture**: Comparative mathematical modeling of Relative referencing (`B2*C2`), Absolute referencing anchoring a fixed 18% discount cell (`$F$9`), and Mixed referencing locking columns while freeing rows (`=$E2-$F2`).
+- **Commercial Impact**: Evaluating Gross Total Sales (₹814.00) vs. Total Net Realized Revenue (₹667.48) after promotional discount absorption (₹146.52).
+- **Category Leadership**: Product revenue contributions led by Dates (₹295.20, 44.23%), followed by Apples and Bananas (₹123.00, 18.43% each).
+- **Visual Intelligence**: Delivering 4-panel analytics including Gross vs. Net realization bars, category share donut charts, pricing velocity bubbles, and margin waterfall breakdowns.
 
 ---
 
