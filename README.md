@@ -24,6 +24,7 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`Excel_Basics_Cell_Referencing_Assignment.ipynb`](Excel_Basics_Cell_Referencing_Assignment.ipynb) | **Excel Basics: Cell Referencing** | Relative (`B2*C2`), Absolute (`$F$9`), and Mixed (`=$E2-$F2`) cell referencing mechanics, discount deductions, and product sales analytics. | ✅ **100% Complete** |
 | [`Superstore_Sales_Analytics_Assignment.ipynb`](Superstore_Sales_Analytics_Assignment.ipynb) | **Superstore Sales Analytics** | End-to-end EDA on 9,994 US retail orders: category/sub-category profitability, regional analysis, discount impact, time-series trends, returns analysis, regional manager performance, top customers & products, and pivot heatmaps. | ✅ **100% Complete** |
 | [`Titanic_Survival_Analytics_Assignment.ipynb`](Titanic_Survival_Analytics_Assignment.ipynb) | **Titanic Survival Analytics & Modeling** | Comprehensive demographic & socioeconomic survival analysis on 712 passengers: Chi-Square independence tests, Welch's t-tests, multivariate interaction heatmaps, and predictive modeling (Logistic Regression, Decision Trees, Random Forest). | ✅ **100% Complete** |
+| [`Green_Destinations_HR_Attrition_Analytics.ipynb`](Green_Destinations_HR_Attrition_Analytics.ipynb) | **Green Destinations HR Attrition Analytics** | Complete workforce diagnostics on 1,470 travel agency staff addressing the HR Director's brief: overall attrition rate (16.12%), age gradients, tenure attrition curves, monthly income disparities, OverTime risk multiplier (2.92x), and machine learning risk modeling. | ✅ **100% Complete** |
 | [`Sales_Data.csv`](Sales_Data.csv) | **Dataset** | Sales transactions dataset containing regional sales, quantities, unit prices, and targets. | 📊 **Included** |
 | [`Employee_Master_Dataset.csv`](Employee_Master_Dataset.csv) | **Dataset** | Comprehensive 110-employee master dataset with parsed email IDs, departments, bonuses, and locations. | 📊 **Included** |
 | [`Quarterly_Sales_Data.csv`](Quarterly_Sales_Data.csv) | **Dataset** | Quarterly sales records across 5 sales representatives in wide cross-tabulated format. | 📊 **Included** |
@@ -35,6 +36,7 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`People.csv`](People.csv) | **Dataset** | Superstore regional manager reference table mapping managers to US regions. | 📊 **Included** |
 | [`Returns.csv`](Returns.csv) | **Dataset** | Superstore returns log containing returned order IDs for return-rate analysis. | 📊 **Included** |
 | [`Titanic_Dataset.csv`](Titanic_Dataset.csv) | **Dataset** | Historical passenger survival dataset: 712 passenger records tracking survival, class, gender, age, family size, fare, and embarkation port. | 📊 **Included** |
+| [`greendestination.csv`](greendestination.csv) | **Dataset** | Green Destinations travel agency staff survey dataset: 1,470 employee profiles across 35 attributes (demographics, compensation, tenure, satisfaction, and attrition). | 📊 **Included** |
 | [`Cars_data_.csv`](Cars_data_.csv) | **Dataset** | Kaggle Car Features and MSRP dataset used for the EDA assignment. | 📊 **Included** |
 | [`Employee Dataset.csv`](Employee%20Dataset.csv) | **Dataset** | Employee dataset containing demographics, lifestyle metrics, and salary data. | 📊 **Included** |
 | [`Wine Quality Dataset.csv`](Wine%20Quality%20Dataset.csv) | **Dataset** | Physicochemical properties and sensory quality scores of wine samples. | 📊 **Included** |
@@ -157,6 +159,23 @@ This repository contains all completed and fully executed assignment notebooks a
   - Evaluated Logistic Regression, Decision Trees, and Random Forest Classifiers under 5-fold cross-validation and stratified holdout evaluation.
   - Random Forest achieved 82.5% test accuracy and 0.865 ROC-AUC score, with Gender (`Is_Female`), Fare, and Ticket Class dominating Gini feature importance.
 - **Executive BI Dashboard**: High-resolution 4-panel analytical visualization synthesizing class-gender intersections, age cohort gradients, fare density distributions, and family structure dynamics.
+
+### 15. Green Destinations HR & Employee Attrition Analytics (`Green_Destinations_HR_Attrition_Analytics.ipynb`)
+- **Executive Mandate & Brief Resolution**: Comprehensive empirical analysis on 1,470 staff members resolving the HR Director's core questions:
+  - **Baseline Attrition Rate**: Precisely **16.12%** (237 departed employees out of 1,470 surveyed).
+- **Core Determinants Empirically Investigated**:
+  - **Age Dynamics**: Employees who leave are on average **3.95 years younger** (mean 33.61 vs. 37.56 years, Welch's $t = -5.83, p < 0.0001$). Attrition peaks in the 18–25 age cohort at **35.9%**.
+  - **Tenure at Company**: Attrition is heavily front-loaded in the first 0–24 months (median tenure 3.0 years for leavers vs. 6.0 years for retained staff, Welch's $t = -5.20, p < 0.0001$). New hires (0–1 year) face a **32.8%** attrition rate.
+  - **Compensation Disparity**: Departing employees suffer an average monthly deficit of **-$2,045.65** (mean \$4,787 vs. \$6,833, median \$3,202 vs. \$5,204, Welch's $t = -7.42, p < 0.0001$). Entry-level staff (< \$3,000/mo) suffer **28.9%** attrition.
+- **Organizational Triggers & Workplace Factors**:
+  - **OverTime Multiplier**: OverTime acts as the single largest operational trigger ($\chi^2 = 87.56, p < 0.0001$). Employees with OverTime exhibit **30.53%** attrition vs. **10.44%** without OverTime (**2.92x risk multiplier**).
+  - **Department & Role Disparities**: Sales leads attrition at **20.63%**, driven by Sales Representatives facing an alarming **39.76%** turnover rate.
+- **Predictive Machine Learning**:
+  - Logistic Regression and Random Forest Classifiers trained with class-balanced weighting on engineered features.
+  - Random Forest achieved an ROC-AUC of **0.803**, with Monthly Income, OverTime, Age, and Total Working Years dominating Gini feature importance.
+- **Executive HR Dashboard & Strategic Recommendations**:
+  - 4-panel executive workforce intelligence dashboard visualizing age gradients, income violin distributions, tenure risk curves, and overtime-worklife balance intersections.
+  - Actionable four-pillar retention plan: early-tenure onboarding milestones, entry-level compensation benchmarking, compensatory overtime policies, and sales role quota restructuring.
 
 ---
 
