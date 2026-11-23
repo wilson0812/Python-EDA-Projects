@@ -22,6 +22,7 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`Pivot_and_Unpivot_Data_Reshaping_Assignment.ipynb`](Pivot_and_Unpivot_Data_Reshaping_Assignment.ipynb) | **Pivot & Unpivot Data Reshaping** | Wide-to-long transformation (`pd.melt`), long-to-wide reconstruction (`pivot_table`), QoQ growth modeling, employee sales rankings, and visual heatmaps. | ✅ **100% Complete** |
 | [`PowerQuery_Data_Cleaning_and_Wrangling_Assignment.ipynb`](PowerQuery_Data_Cleaning_and_Wrangling_Assignment.ipynb) | **Power Query & Data Cleaning** | Text trimming, error value imputation, email feature extraction (`EmpID` & `EmpDomain`), query appending, relational merging, and payroll metrics. | ✅ **100% Complete** |
 | [`Excel_Basics_Cell_Referencing_Assignment.ipynb`](Excel_Basics_Cell_Referencing_Assignment.ipynb) | **Excel Basics: Cell Referencing** | Relative (`B2*C2`), Absolute (`$F$9`), and Mixed (`=$E2-$F2`) cell referencing mechanics, discount deductions, and product sales analytics. | ✅ **100% Complete** |
+| [`Superstore_Sales_Analytics_Assignment.ipynb`](Superstore_Sales_Analytics_Assignment.ipynb) | **Superstore Sales Analytics** | End-to-end EDA on 9,994 US retail orders: category/sub-category profitability, regional analysis, discount impact, time-series trends, returns analysis, regional manager performance, top customers & products, and pivot heatmaps. | ✅ **100% Complete** |
 | [`Sales_Data.csv`](Sales_Data.csv) | **Dataset** | Sales transactions dataset containing regional sales, quantities, unit prices, and targets. | 📊 **Included** |
 | [`Employee_Master_Dataset.csv`](Employee_Master_Dataset.csv) | **Dataset** | Comprehensive 110-employee master dataset with parsed email IDs, departments, bonuses, and locations. | 📊 **Included** |
 | [`Quarterly_Sales_Data.csv`](Quarterly_Sales_Data.csv) | **Dataset** | Quarterly sales records across 5 sales representatives in wide cross-tabulated format. | 📊 **Included** |
@@ -29,6 +30,9 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`PowerQuery_Employee_RawData.csv`](PowerQuery_Employee_RawData.csv) | **Dataset** | Uncleaned raw employee dataset containing whitespace noise, `#ERROR` values, and unassigned departments. | 📊 **Included** |
 | [`PowerQuery_Cleaned_Master_Dataset.csv`](PowerQuery_Cleaned_Master_Dataset.csv) | **Dataset** | Fully cleaned and consolidated 110-employee master dataset with joined organizational hierarchies. | 📊 **Included** |
 | [`Fruit_Sales_Referencing_Data.csv`](Fruit_Sales_Referencing_Data.csv) | **Dataset** | Retail fruit transactions dataset tracking quantities, unit pricing, discounts, and net realizations. | 📊 **Included** |
+| [`Orders.csv`](Orders.csv) | **Dataset** | Superstore transactional orders dataset: 9,994 order lines with sales, profit, discount, category, region, and customer data (2015–2018). | 📊 **Included** |
+| [`People.csv`](People.csv) | **Dataset** | Superstore regional manager reference table mapping managers to US regions. | 📊 **Included** |
+| [`Returns.csv`](Returns.csv) | **Dataset** | Superstore returns log containing returned order IDs for return-rate analysis. | 📊 **Included** |
 | [`Cars_data_.csv`](Cars_data_.csv) | **Dataset** | Kaggle Car Features and MSRP dataset used for the EDA assignment. | 📊 **Included** |
 | [`Employee Dataset.csv`](Employee%20Dataset.csv) | **Dataset** | Employee dataset containing demographics, lifestyle metrics, and salary data. | 📊 **Included** |
 | [`Wine Quality Dataset.csv`](Wine%20Quality%20Dataset.csv) | **Dataset** | Physicochemical properties and sensory quality scores of wine samples. | 📊 **Included** |
@@ -124,6 +128,18 @@ This repository contains all completed and fully executed assignment notebooks a
 - **Commercial Impact**: Evaluating Gross Total Sales (₹814.00) vs. Total Net Realized Revenue (₹667.48) after promotional discount absorption (₹146.52).
 - **Category Leadership**: Product revenue contributions led by Dates (₹295.20, 44.23%), followed by Apples and Bananas (₹123.00, 18.43% each).
 - **Visual Intelligence**: Delivering 4-panel analytics including Gross vs. Net realization bars, category share donut charts, pricing velocity bubbles, and margin waterfall breakdowns.
+
+### 13. Superstore Sales Analytics (`Superstore_Sales_Analytics_Assignment.ipynb`)
+- **Dataset Overview**: 9,994 US retail order lines spanning 2015–2018 with 21 fields across Orders, People, and Returns tables.
+- **Feature Engineering**: Derived year, month, quarter, profit margin %, shipping duration, and loss flags from raw transactional data.
+- **Category & Sub-Category Profitability**: Technology leads with the highest margins; Tables and Bookcases in Furniture consistently generate losses; Copiers emerge as the single most profitable sub-category.
+- **Regional Intelligence**: West and East regions dominate sales and profit; Central and South lag with lower margin efficiency.
+- **Discount Impact Analysis**: Correlation analysis and banded profit modeling confirm that discounts exceeding 30% reliably produce negative profit — high-discounting is a primary driver of loss-making orders.
+- **Time-Series Trends**: Monthly dual-axis Sales & Profit visualization reveals seasonal Q4 spikes (Nov–Dec) every year from 2015–2018, with consistent year-over-year revenue growth.
+- **Returns Analysis**: Return rate and category-wise return rate computed by merging the Returns table; Furniture carries the highest return rate.
+- **Regional Manager Performance**: People table merged to rank Anna Andreadi (West), Chuck Magee (East), Kelly Williams (Central), and Cassandra Brandow (South) by sales and profit.
+- **Top Customers & Products**: Identified top-10 customers by sales and top-10 products by profit with ranked visualizations.
+- **Pivot Heatmaps**: Sales and Profit Margin % heatmaps across Region × Category and Segment × Category matrices for rapid BI scanning.
 
 ---
 
