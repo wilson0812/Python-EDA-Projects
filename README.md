@@ -23,6 +23,7 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`PowerQuery_Data_Cleaning_and_Wrangling_Assignment.ipynb`](PowerQuery_Data_Cleaning_and_Wrangling_Assignment.ipynb) | **Power Query & Data Cleaning** | Text trimming, error value imputation, email feature extraction (`EmpID` & `EmpDomain`), query appending, relational merging, and payroll metrics. | ✅ **100% Complete** |
 | [`Excel_Basics_Cell_Referencing_Assignment.ipynb`](Excel_Basics_Cell_Referencing_Assignment.ipynb) | **Excel Basics: Cell Referencing** | Relative (`B2*C2`), Absolute (`$F$9`), and Mixed (`=$E2-$F2`) cell referencing mechanics, discount deductions, and product sales analytics. | ✅ **100% Complete** |
 | [`Superstore_Sales_Analytics_Assignment.ipynb`](Superstore_Sales_Analytics_Assignment.ipynb) | **Superstore Sales Analytics** | End-to-end EDA on 9,994 US retail orders: category/sub-category profitability, regional analysis, discount impact, time-series trends, returns analysis, regional manager performance, top customers & products, and pivot heatmaps. | ✅ **100% Complete** |
+| [`Titanic_Survival_Analytics_Assignment.ipynb`](Titanic_Survival_Analytics_Assignment.ipynb) | **Titanic Survival Analytics & Modeling** | Comprehensive demographic & socioeconomic survival analysis on 712 passengers: Chi-Square independence tests, Welch's t-tests, multivariate interaction heatmaps, and predictive modeling (Logistic Regression, Decision Trees, Random Forest). | ✅ **100% Complete** |
 | [`Sales_Data.csv`](Sales_Data.csv) | **Dataset** | Sales transactions dataset containing regional sales, quantities, unit prices, and targets. | 📊 **Included** |
 | [`Employee_Master_Dataset.csv`](Employee_Master_Dataset.csv) | **Dataset** | Comprehensive 110-employee master dataset with parsed email IDs, departments, bonuses, and locations. | 📊 **Included** |
 | [`Quarterly_Sales_Data.csv`](Quarterly_Sales_Data.csv) | **Dataset** | Quarterly sales records across 5 sales representatives in wide cross-tabulated format. | 📊 **Included** |
@@ -33,6 +34,7 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`Orders.csv`](Orders.csv) | **Dataset** | Superstore transactional orders dataset: 9,994 order lines with sales, profit, discount, category, region, and customer data (2015–2018). | 📊 **Included** |
 | [`People.csv`](People.csv) | **Dataset** | Superstore regional manager reference table mapping managers to US regions. | 📊 **Included** |
 | [`Returns.csv`](Returns.csv) | **Dataset** | Superstore returns log containing returned order IDs for return-rate analysis. | 📊 **Included** |
+| [`Titanic_Dataset.csv`](Titanic_Dataset.csv) | **Dataset** | Historical passenger survival dataset: 712 passenger records tracking survival, class, gender, age, family size, fare, and embarkation port. | 📊 **Included** |
 | [`Cars_data_.csv`](Cars_data_.csv) | **Dataset** | Kaggle Car Features and MSRP dataset used for the EDA assignment. | 📊 **Included** |
 | [`Employee Dataset.csv`](Employee%20Dataset.csv) | **Dataset** | Employee dataset containing demographics, lifestyle metrics, and salary data. | 📊 **Included** |
 | [`Wine Quality Dataset.csv`](Wine%20Quality%20Dataset.csv) | **Dataset** | Physicochemical properties and sensory quality scores of wine samples. | 📊 **Included** |
@@ -140,6 +142,21 @@ This repository contains all completed and fully executed assignment notebooks a
 - **Regional Manager Performance**: People table merged to rank Anna Andreadi (West), Chuck Magee (East), Kelly Williams (Central), and Cassandra Brandow (South) by sales and profit.
 - **Top Customers & Products**: Identified top-10 customers by sales and top-10 products by profit with ranked visualizations.
 - **Pivot Heatmaps**: Sales and Profit Margin % heatmaps across Region × Category and Segment × Category matrices for rapid BI scanning.
+
+### 14. Titanic Survival Analytics & Predictive Modeling (`Titanic_Survival_Analytics_Assignment.ipynb`)
+- **Dataset Architecture**: Complete exploratory and inferential study of 712 passenger records across 7 core demographic and socioeconomic dimensions.
+- **Evacuation Demographics ("Women & Children First")**:
+  - Female survival rate reached 75.3% vs. 20.5% for males (disparity of +54.8%, $\chi^2 = 180.2$, $p < 0.0001$).
+  - Children aged $\le 12$ recorded a 57.4% survival rate, significantly outperforming adults (>12) at ~38.4%.
+- **Socioeconomic Stratification**:
+  - First-class passengers achieved a 65.5% survival rate, Second-class 48.0%, and Third-class only 23.9% ($\chi^2 = 72.8$, $p < 0.0001$).
+  - Welch's two-sample t-test confirms survivors paid significantly higher ticket fares (mean £51.84 vs. £22.97, $t = 6.47$, $p < 0.0001$).
+- **Intersectionality & Compounding Privilege**: First-class females experienced a 96.8% survival rate, whereas third-class males experienced the lowest survival rate at 15.0%.
+- **Family Structure Impact**: Passengers in small families (1–3 members) exhibited the highest survival rate (~56%), whereas solo travelers (~32%) and large families with 4+ members (~15%) faced severe survival penalties.
+- **Predictive Machine Learning**:
+  - Evaluated Logistic Regression, Decision Trees, and Random Forest Classifiers under 5-fold cross-validation and stratified holdout evaluation.
+  - Random Forest achieved 82.5% test accuracy and 0.865 ROC-AUC score, with Gender (`Is_Female`), Fare, and Ticket Class dominating Gini feature importance.
+- **Executive BI Dashboard**: High-resolution 4-panel analytical visualization synthesizing class-gender intersections, age cohort gradients, fare density distributions, and family structure dynamics.
 
 ---
 
