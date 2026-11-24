@@ -26,6 +26,7 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`Titanic_Survival_Analytics_Assignment.ipynb`](Titanic_Survival_Analytics_Assignment.ipynb) | **Titanic Survival Analytics & Modeling** | Comprehensive demographic & socioeconomic survival analysis on 712 passengers: Chi-Square independence tests, Welch's t-tests, multivariate interaction heatmaps, and predictive modeling (Logistic Regression, Decision Trees, Random Forest). | ✅ **100% Complete** |
 | [`Green_Destinations_HR_Attrition_Analytics.ipynb`](Green_Destinations_HR_Attrition_Analytics.ipynb) | **Green Destinations HR Attrition Analytics** | Complete workforce diagnostics on 1,470 travel agency staff addressing the HR Director's brief: overall attrition rate (16.12%), age gradients, tenure attrition curves, monthly income disparities, OverTime risk multiplier (2.92x), and machine learning risk modeling. | ✅ **100% Complete** |
 | [`SQL_Window_Functions_Assignment.ipynb`](SQL_Window_Functions_Assignment.ipynb) | **SQL Window Functions & Analytics** | DDL/DML schema building and execution of Aggregate (`SUM`, `AVG`, `COUNT`, `MIN`, `MAX` with `PARTITION BY`), Ranking (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `PERCENT_RANK`), and Analytic (`FIRST_VALUE`, `LAST_VALUE`, `LEAD`, `LAG`) window functions, window frame mechanics, and Pandas dual replication. | ✅ **100% Complete** |
+| [`SQL_Project_Case_Study_Assignment.ipynb`](SQL_Project_Case_Study_Assignment.ipynb) | **SQL Case Study: Orders Database Analytics** | Complete execution and analysis of 10 business case study queries on retail orders database: aggregations, filtering, group-level price boundaries (`MIN`/`MAX`), `HAVING` thresholding, pattern matching bug fixes, and customer spend profiling. | ✅ **100% Complete** |
 | [`Sales_Data.csv`](Sales_Data.csv) | **Dataset** | Sales transactions dataset containing regional sales, quantities, unit prices, and targets. | 📊 **Included** |
 | [`Employee_Master_Dataset.csv`](Employee_Master_Dataset.csv) | **Dataset** | Comprehensive 110-employee master dataset with parsed email IDs, departments, bonuses, and locations. | 📊 **Included** |
 | [`Quarterly_Sales_Data.csv`](Quarterly_Sales_Data.csv) | **Dataset** | Quarterly sales records across 5 sales representatives in wide cross-tabulated format. | 📊 **Included** |
@@ -39,6 +40,7 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`Titanic_Dataset.csv`](Titanic_Dataset.csv) | **Dataset** | Historical passenger survival dataset: 712 passenger records tracking survival, class, gender, age, family size, fare, and embarkation port. | 📊 **Included** |
 | [`greendestination.csv`](greendestination.csv) | **Dataset** | Green Destinations travel agency staff survey dataset: 1,470 employee profiles across 35 attributes (demographics, compensation, tenure, satisfaction, and attrition). | 📊 **Included** |
 | [`SQL_Window_Functions_Data.csv`](SQL_Window_Functions_Data.csv) | **Dataset** | Test schema records (`test_data`) containing elemental categories (Agni, Dharti, Vayu) and ID values used for window function execution. | 📊 **Included** |
+| [`Orders_Dataset.csv`](Orders_Dataset.csv) | **Dataset** | Retail orders transaction records (32 rows) tracking customer IDs, dates (1999–2000), outdoor equipment items, quantities, and prices. | 📊 **Included** |
 | [`Cars_data_.csv`](Cars_data_.csv) | **Dataset** | Kaggle Car Features and MSRP dataset used for the EDA assignment. | 📊 **Included** |
 | [`Employee Dataset.csv`](Employee%20Dataset.csv) | **Dataset** | Employee dataset containing demographics, lifestyle metrics, and salary data. | 📊 **Included** |
 | [`Wine Quality Dataset.csv`](Wine%20Quality%20Dataset.csv) | **Dataset** | Physicochemical properties and sensory quality scores of wine samples. | 📊 **Included** |
@@ -191,6 +193,21 @@ This repository contains all completed and fully executed assignment notebooks a
   - Deep-dive into `FIRST_VALUE()` and `LAST_VALUE()`, uncovering the standard SQL default frame gotcha (`RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`) vs. explicit full frame expansion (`ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING`).
 - **Python / Pandas Duality**: Complete side-by-side replication using native Pandas methods (`cumsum`, `expanding().mean()`, `cumcount()`, `rank()`, and `shift()`).
 - **Visual Intelligence Dashboard**: High-resolution visualizations mapping cumulative category trajectories, ranking step functions, and lead/lag row offsets.
+
+### 17. SQL Case Study: Orders Database Analytics (`SQL_Project_Case_Study_Assignment.ipynb`)
+- **Schema & Relational Setup**: Populated the `orders` table with 32 transaction records spanning customer accounts, dates (1999–2000), outdoor merchandise, quantities, and pricing.
+- **10 Core Case Study Queries Resolved**:
+  - Customer Filtering: Extracted all 6 items purchased by Customer `10449`.
+  - Temporal Aggregation: Computed average December item order price ($174.31) across winter merchandise.
+  - Category Price Floors: Isolated the minimum price of all tents ordered ($79.99).
+  - Item Grouping & Boundaries: Analyzed `MAX(price)` and `MIN(price)` across all 26 distinct catalog items.
+  - Post-Aggregation Thresholding: Implemented `HAVING MAX(price) > 190.00` to isolate high-value items (Parachute, Bicycle, Canoe, Unicycle).
+  - Price-Filtered Sorting: Filtered items exceeding $10.00 sorted in ascending order (27 rows).
+  - List Exclusion (`NOT IN`): Safely excluded 'Snow Shoes' and 'Ear Muffs' while clarifying double-negative wording.
+  - Pattern Matching Bug Fix: Identified and resolved the logic bug in the draft query (`LIKE '%S%' AND '%P%'`), replacing it with correct starting-letter prefix matching (`LIKE 'S%' OR LIKE 'P%'`).
+  - Range Querying (`BETWEEN`): Extracted all 18 orders falling within the $10.00–$80.00 price band.
+  - Weighted Unit Price: Computed revenue-weighted unit pricing (`SUM(price) / SUM(quantity)`) ranked descending.
+- **Business Analytics & Spend Profiling**: Aggregated spend by customer ID (identifying Customer 10299 and 10449 as top revenue drivers) and visualized unit price tiers.
 
 ---
 
