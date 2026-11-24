@@ -25,6 +25,7 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`Superstore_Sales_Analytics_Assignment.ipynb`](Superstore_Sales_Analytics_Assignment.ipynb) | **Superstore Sales Analytics** | End-to-end EDA on 9,994 US retail orders: category/sub-category profitability, regional analysis, discount impact, time-series trends, returns analysis, regional manager performance, top customers & products, and pivot heatmaps. | ✅ **100% Complete** |
 | [`Titanic_Survival_Analytics_Assignment.ipynb`](Titanic_Survival_Analytics_Assignment.ipynb) | **Titanic Survival Analytics & Modeling** | Comprehensive demographic & socioeconomic survival analysis on 712 passengers: Chi-Square independence tests, Welch's t-tests, multivariate interaction heatmaps, and predictive modeling (Logistic Regression, Decision Trees, Random Forest). | ✅ **100% Complete** |
 | [`Green_Destinations_HR_Attrition_Analytics.ipynb`](Green_Destinations_HR_Attrition_Analytics.ipynb) | **Green Destinations HR Attrition Analytics** | Complete workforce diagnostics on 1,470 travel agency staff addressing the HR Director's brief: overall attrition rate (16.12%), age gradients, tenure attrition curves, monthly income disparities, OverTime risk multiplier (2.92x), and machine learning risk modeling. | ✅ **100% Complete** |
+| [`SQL_Window_Functions_Assignment.ipynb`](SQL_Window_Functions_Assignment.ipynb) | **SQL Window Functions & Analytics** | DDL/DML schema building and execution of Aggregate (`SUM`, `AVG`, `COUNT`, `MIN`, `MAX` with `PARTITION BY`), Ranking (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `PERCENT_RANK`), and Analytic (`FIRST_VALUE`, `LAST_VALUE`, `LEAD`, `LAG`) window functions, window frame mechanics, and Pandas dual replication. | ✅ **100% Complete** |
 | [`Sales_Data.csv`](Sales_Data.csv) | **Dataset** | Sales transactions dataset containing regional sales, quantities, unit prices, and targets. | 📊 **Included** |
 | [`Employee_Master_Dataset.csv`](Employee_Master_Dataset.csv) | **Dataset** | Comprehensive 110-employee master dataset with parsed email IDs, departments, bonuses, and locations. | 📊 **Included** |
 | [`Quarterly_Sales_Data.csv`](Quarterly_Sales_Data.csv) | **Dataset** | Quarterly sales records across 5 sales representatives in wide cross-tabulated format. | 📊 **Included** |
@@ -37,6 +38,7 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`Returns.csv`](Returns.csv) | **Dataset** | Superstore returns log containing returned order IDs for return-rate analysis. | 📊 **Included** |
 | [`Titanic_Dataset.csv`](Titanic_Dataset.csv) | **Dataset** | Historical passenger survival dataset: 712 passenger records tracking survival, class, gender, age, family size, fare, and embarkation port. | 📊 **Included** |
 | [`greendestination.csv`](greendestination.csv) | **Dataset** | Green Destinations travel agency staff survey dataset: 1,470 employee profiles across 35 attributes (demographics, compensation, tenure, satisfaction, and attrition). | 📊 **Included** |
+| [`SQL_Window_Functions_Data.csv`](SQL_Window_Functions_Data.csv) | **Dataset** | Test schema records (`test_data`) containing elemental categories (Agni, Dharti, Vayu) and ID values used for window function execution. | 📊 **Included** |
 | [`Cars_data_.csv`](Cars_data_.csv) | **Dataset** | Kaggle Car Features and MSRP dataset used for the EDA assignment. | 📊 **Included** |
 | [`Employee Dataset.csv`](Employee%20Dataset.csv) | **Dataset** | Employee dataset containing demographics, lifestyle metrics, and salary data. | 📊 **Included** |
 | [`Wine Quality Dataset.csv`](Wine%20Quality%20Dataset.csv) | **Dataset** | Physicochemical properties and sensory quality scores of wine samples. | 📊 **Included** |
@@ -176,6 +178,19 @@ This repository contains all completed and fully executed assignment notebooks a
 - **Executive HR Dashboard & Strategic Recommendations**:
   - 4-panel executive workforce intelligence dashboard visualizing age gradients, income violin distributions, tenure risk curves, and overtime-worklife balance intersections.
   - Actionable four-pillar retention plan: early-tenure onboarding milestones, entry-level compensation benchmarking, compensatory overtime policies, and sales role quota restructuring.
+
+### 16. SQL Window Functions & Advanced Analytics (`SQL_Window_Functions_Assignment.ipynb`)
+- **Schema & DDL/DML Architecture**: Programmatic creation of the `test_data` table and insertion of categorical rows (`Agni`, `Dharti`, `Vayu`) using in-memory SQLite and Python.
+- **Aggregate Window Functions**:
+  - Demonstrates partitioned running metrics (`SUM`, `AVG`, `COUNT`, `MIN`, `MAX` with `PARTITION BY new_cat ORDER BY new_id`).
+  - Proves how row-level identity is preserved while computing moving aggregations within each category boundary.
+- **Ranking Functions & Tie-Handling Dynamics**:
+  - Rigorous comparative analysis of `ROW_NUMBER()` (strictly sequential), `RANK()` (gap-generating ties: $1, 2, 2, 4, 5, 5, 7$), `DENSE_RANK()` (compact consecutive ties: $1, 2, 2, 3, 4, 4, 5$), and `PERCENT_RANK()` (normalized percentile rank $\frac{\text{RANK}-1}{N-1}$ from 0.00% to 100.00%).
+- **Analytic / Value Functions & Frame Gotchas**:
+  - Navigation across adjacent rows using `LEAD()` (look-ahead) and `LAG()` (look-behind).
+  - Deep-dive into `FIRST_VALUE()` and `LAST_VALUE()`, uncovering the standard SQL default frame gotcha (`RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`) vs. explicit full frame expansion (`ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING`).
+- **Python / Pandas Duality**: Complete side-by-side replication using native Pandas methods (`cumsum`, `expanding().mean()`, `cumcount()`, `rank()`, and `shift()`).
+- **Visual Intelligence Dashboard**: High-resolution visualizations mapping cumulative category trajectories, ranking step functions, and lead/lag row offsets.
 
 ---
 
