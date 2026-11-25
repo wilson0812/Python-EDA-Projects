@@ -29,6 +29,7 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`SQL_Project_Case_Study_Assignment.ipynb`](SQL_Project_Case_Study_Assignment.ipynb) | **SQL Case Study: Orders Database Analytics** | Complete execution and analysis of 10 business case study queries on retail orders database: aggregations, filtering, group-level price boundaries (`MIN`/`MAX`), `HAVING` thresholding, pattern matching bug fixes, and customer spend profiling. | ✅ **100% Complete** |
 | [`Employee_Master_and_Workshops_Analytics.ipynb`](Employee_Master_and_Workshops_Analytics.ipynb) | **Employee Master & Workshops Analytics** | Integrated workforce demographics (50 employees) and corporate training logs (152 workshop sessions): departmental training investments, course popularity, vendor expenditure, and job grade participation. | ✅ **100% Complete** |
 | [`Date_Master_and_Time_Intelligence_Analytics.ipynb`](Date_Master_and_Time_Intelligence_Analytics.ipynb) | **Date Master & Time Intelligence Analytics** | Star-schema calendar dimension table modeling across 2,557 days (2018–2024): calendar quarters, business days vs weekend allocations, leap-year handling (2020 & 2024), and time-series seasonality metrics. | ✅ **100% Complete** |
+| [`Training_Sales_Analytics_Assignment.ipynb`](Training_Sales_Analytics_Assignment.ipynb) | **Training Sales Analytics** | Multichannel retail sales EDA on 15,000 orders (2012–2014): channel & regional profitability, product category rankings, top manufacturers, promotion effectiveness, and monthly/quarterly trend analysis. | ✅ **100% Complete** |
 | [`Sales_Data.csv`](Sales_Data.csv) | **Dataset** | Sales transactions dataset containing regional sales, quantities, unit prices, and targets. | 📊 **Included** |
 | [`Employee_Master_Dataset.csv`](Employee_Master_Dataset.csv) | **Dataset** | Comprehensive 110-employee master dataset with parsed email IDs, departments, bonuses, and locations. | 📊 **Included** |
 | [`Quarterly_Sales_Data.csv`](Quarterly_Sales_Data.csv) | **Dataset** | Quarterly sales records across 5 sales representatives in wide cross-tabulated format. | 📊 **Included** |
@@ -229,6 +230,16 @@ This repository contains all completed and fully executed assignment notebooks a
   - Calculated exact business day allocations per year (~261 business days vs. ~104 weekend days), providing standard trading and operational baselines.
   - Formulated a 7-year monthly working day heatmap identifying monthly seasonality and working-day fluctuations.
 - **Time Intelligence Architecture**: Established best practices for role-playing date dimension tables in relational data warehouses, ensuring zero-gap continuous dates for reliable period-over-period (YoY, MoM, QoQ) rollups.
+
+### 20. Training Sales Analytics (`Training_Sales_Analytics_Assignment.ipynb`)
+- **Dataset Overview**: 15,000 multichannel retail orders (2012–2014) across Store, Online, and Catalog channels covering 17 attributes — from order metadata through product hierarchy, region, city, country, and promotion.
+- **Channel Profitability**: Compared total sales, profit, and margin across channels, identifying the dominant channel by revenue and profit margin efficiency.
+- **Regional & Geographic Breakdown**: Ranked all global regions and top 12 countries and cities by revenue generated, surfacing concentration risk and expansion opportunities.
+- **Product Category Rankings**: Evaluated sales and profit across 8 product categories (Cameras, Audio, TV, Computers, etc.) and top 10 sub-categories, with top 15 individual product performance.
+- **Manufacturer Analysis**: Benchmarked top 10 manufacturers side-by-side on sales vs. profit contribution using grouped bar charts.
+- **Promotion Effectiveness**: Assessed 15+ seasonal promotions (European Spring, North America Spring, Asian Spring, etc.) by order volume and revenue generated.
+- **Time-Series Trends**: Monthly and quarterly sales/profit trend lines (2012–2014) with YoY comparisons and seasonality analysis.
+- **Distribution & Correlation Analysis**: Histograms (log scale), boxplots by channel, and a 6-variable correlation heatmap highlighting relationships between unit cost, price, quantity, and profitability.
 
 ---
 
