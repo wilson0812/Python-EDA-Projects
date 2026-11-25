@@ -1,0 +1,51 @@
+EmployeeID,Employee Name,BirthDate,MaritalStatus,Gender,HireDate,Dept,Salary,Job Grade
+1,Gustavo Achong,1982-05-15,M,M,2002-07-31,Sales,2295,Admin
+2,Catherine Abel,1987-06-03,S,F,2010-02-26,Sales,962,Management
+3,Kim Abercrombie,1964-12-13,M,F,2007-12-12,Finance,4006,Admin
+4,Humberto Acevedo,1965-01-23,S,M,2007-01-05,Logistics,4547,Admin
+5,Pilar Ackerman,1949-08-29,M,F,2007-01-11,Human Resource,1932,Admin
+6,Frances Adams,1965-04-19,S,F,2005-01-20,Sales,3223,Management
+7,Margaret Smith,1946-02-16,S,F,2013-01-26,Sales,1329,Operations
+8,Carla Adams,1946-07-06,M,F,2012-02-06,Finance,3989,Management
+9,Jay Adams,1992-10-29,M,M,2006-02-06,Finance,1636,Admin
+10,Ronald Adina,1966-04-27,S,M,2010-02-07,Logistics,3386,Admin
+11,Samuel Agcaoili,1949-04-11,M,M,2013-02-24,Logistics,3676,Operations
+12,James Aguilar,1961-09-01,S,M,1998-03-03,Human Resource,1128,Operations
+13,Robert Ahlering,1987-10-01,M,M,1998-03-05,Production,2301,Operations
+14,François Ferrier,1991-05-03,M,M,2010-03-11,Logistics,2887,Admin
+15,Kim Akers,1989-08-12,S,F,2009-03-23,Production,2154,Admin
+16,Lili Alameda,1977-11-09,S,F,2008-03-30,Production,2741,Operations
+17,Amy Alberts,1979-05-06,M,F,1998-04-11,Production,4096,Operations
+18,Anna Albright,1985-09-08,M,F,1998-04-18,Sales,1998,Operations
+19,Milton Albury,1983-04-30,M,F,1998-04-29,Sales,3408,Admin
+20,Paul Alcorn,1987-06-15,M,M,1999-01-02,Finance,3390,Admin
+21,Gregory Alderson,1975-12-04,M,M,1999-01-02,Production,2034,Management
+22,J. Phillip Alexander,1965-10-14,S,M,1999-01-03,Logistics,600,Operations
+23,Michelle Alexander,1974-11-18,S,F,1999-01-03,Human Resource,4406,Management
+24,Sean Jacobson,1969-12-03,S,M,1999-01-03,Finance,2042,Operations
+25,Phyllis Allen,1973-11-26,S,F,1999-01-04,Production,664,Operations
+26,Marvin Allen,1972-02-04,M,M,2006-01-05,Production,3723,Admin
+27,Michael Allen,1970-12-15,S,M,2014-01-05,Finance,1161,Admin
+28,Cecil Allison,1967-04-28,S,M,2004-01-05,Human Resource,1711,Operations
+29,Oscar Alpuerto,1976-06-30,M,M,2005-01-06,Finance,3199,Operations
+30,Sandra Altamirano,1966-03-14,M,F,2009-01-07,Production,1513,Operations
+31,Selena Alvarado,1979-01-06,S,F,2006-01-07,Production,3978,Admin
+32,Emilio Alvaro,1974-09-26,S,M,2011-01-08,Sales,3639,Admin
+33,Maxwell Amland,1973-08-27,S,M,2001-01-08,Sales,1134,Operations
+34,Mae Anderson,1968-03-20,S,F,2013-01-08,Finance,2298,Operations
+35,Ramona Antrim,1967-04-19,M,F,2010-01-08,Logistics,3843,Admin
+36,Sabria Appelbaum,1968-02-27,M,F,2011-01-08,Human Resource,3880,Admin
+37,Hannah Arakawa,1980-06-17,S,F,2008-01-09,Production,3967,Management
+38,Kyley Arbelaez,1979-03-09,S,F,2013-01-09,Production,561,Operations
+39,Tom Johnston,1974-12-19,S,M,2004-01-10,Production,1395,Operations
+40,Thomas Armstrong,1979-05-17,M,M,2013-01-10,Finance,548,Operations
+41,John Arthur,1984-04-19,M,M,2007-01-10,Sales,1355,Admin
+42,Chris Ashton,1966-01-13,S,M,2013-01-12,Logistics,2018,Admin
+43,Teresa Atkinson,1989-12-27,M,F,2011-01-13,Logistics,1224,Admin
+44,John Ault,1986-10-19,S,M,2010-01-13,Sales,948,Operations
+45,Robert Avalos,1979-07-27,S,M,2013-01-13,Production,1286,Admin
+46,Stephen Ayers,1977-06-21,S,M,2007-01-13,Production,1808,Operations
+47,Phillip Bacalzo,1992-08-18,S,M,2009-01-14,Human Resource,2533,Admin
+48,Daniel Blanco,1988-08-06,S,M,2010-01-15,Finance,3110,Management
+49,Cory Booth,1987-02-18,M,M,2009-01-15,Finance,4491,Management
+50,Mark Anderson,1986-03-12,M,M,2007-12-12,Sales,2679,Operations

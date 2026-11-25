@@ -27,6 +27,8 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`Green_Destinations_HR_Attrition_Analytics.ipynb`](Green_Destinations_HR_Attrition_Analytics.ipynb) | **Green Destinations HR Attrition Analytics** | Complete workforce diagnostics on 1,470 travel agency staff addressing the HR Director's brief: overall attrition rate (16.12%), age gradients, tenure attrition curves, monthly income disparities, OverTime risk multiplier (2.92x), and machine learning risk modeling. | ✅ **100% Complete** |
 | [`SQL_Window_Functions_Assignment.ipynb`](SQL_Window_Functions_Assignment.ipynb) | **SQL Window Functions & Analytics** | DDL/DML schema building and execution of Aggregate (`SUM`, `AVG`, `COUNT`, `MIN`, `MAX` with `PARTITION BY`), Ranking (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `PERCENT_RANK`), and Analytic (`FIRST_VALUE`, `LAST_VALUE`, `LEAD`, `LAG`) window functions, window frame mechanics, and Pandas dual replication. | ✅ **100% Complete** |
 | [`SQL_Project_Case_Study_Assignment.ipynb`](SQL_Project_Case_Study_Assignment.ipynb) | **SQL Case Study: Orders Database Analytics** | Complete execution and analysis of 10 business case study queries on retail orders database: aggregations, filtering, group-level price boundaries (`MIN`/`MAX`), `HAVING` thresholding, pattern matching bug fixes, and customer spend profiling. | ✅ **100% Complete** |
+| [`Employee_Master_and_Workshops_Analytics.ipynb`](Employee_Master_and_Workshops_Analytics.ipynb) | **Employee Master & Workshops Analytics** | Integrated workforce demographics (50 employees) and corporate training logs (152 workshop sessions): departmental training investments, course popularity, vendor expenditure, and job grade participation. | ✅ **100% Complete** |
+| [`Date_Master_and_Time_Intelligence_Analytics.ipynb`](Date_Master_and_Time_Intelligence_Analytics.ipynb) | **Date Master & Time Intelligence Analytics** | Star-schema calendar dimension table modeling across 2,557 days (2018–2024): calendar quarters, business days vs weekend allocations, leap-year handling (2020 & 2024), and time-series seasonality metrics. | ✅ **100% Complete** |
 | [`Sales_Data.csv`](Sales_Data.csv) | **Dataset** | Sales transactions dataset containing regional sales, quantities, unit prices, and targets. | 📊 **Included** |
 | [`Employee_Master_Dataset.csv`](Employee_Master_Dataset.csv) | **Dataset** | Comprehensive 110-employee master dataset with parsed email IDs, departments, bonuses, and locations. | 📊 **Included** |
 | [`Quarterly_Sales_Data.csv`](Quarterly_Sales_Data.csv) | **Dataset** | Quarterly sales records across 5 sales representatives in wide cross-tabulated format. | 📊 **Included** |
@@ -41,6 +43,9 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`greendestination.csv`](greendestination.csv) | **Dataset** | Green Destinations travel agency staff survey dataset: 1,470 employee profiles across 35 attributes (demographics, compensation, tenure, satisfaction, and attrition). | 📊 **Included** |
 | [`SQL_Window_Functions_Data.csv`](SQL_Window_Functions_Data.csv) | **Dataset** | Test schema records (`test_data`) containing elemental categories (Agni, Dharti, Vayu) and ID values used for window function execution. | 📊 **Included** |
 | [`Orders_Dataset.csv`](Orders_Dataset.csv) | **Dataset** | Retail orders transaction records (32 rows) tracking customer IDs, dates (1999–2000), outdoor equipment items, quantities, and prices. | 📊 **Included** |
+| [`Employee_Master.csv`](Employee_Master.csv) | **Dataset** | Workforce roster of 50 employees capturing birth dates, hire dates, departments, salaries, and job grades. | 📊 **Included** |
+| [`Employee_Workshops.csv`](Employee_Workshops.csv) | **Dataset** | Corporate training attendance logs (152 records) detailing course titles, supplier vendors, and attendance costs. | 📊 **Included** |
+| [`Date_Master.csv`](Date_Master.csv) | **Dataset** | Master calendar dimension table (2,557 daily records from 2018–2024) with precalculated day, month, year, weekday, and week number attributes. | 📊 **Included** |
 | [`Cars_data_.csv`](Cars_data_.csv) | **Dataset** | Kaggle Car Features and MSRP dataset used for the EDA assignment. | 📊 **Included** |
 | [`Employee Dataset.csv`](Employee%20Dataset.csv) | **Dataset** | Employee dataset containing demographics, lifestyle metrics, and salary data. | 📊 **Included** |
 | [`Wine Quality Dataset.csv`](Wine%20Quality%20Dataset.csv) | **Dataset** | Physicochemical properties and sensory quality scores of wine samples. | 📊 **Included** |
@@ -208,6 +213,22 @@ This repository contains all completed and fully executed assignment notebooks a
   - Range Querying (`BETWEEN`): Extracted all 18 orders falling within the $10.00–$80.00 price band.
   - Weighted Unit Price: Computed revenue-weighted unit pricing (`SUM(price) / SUM(quantity)`) ranked descending.
 - **Business Analytics & Spend Profiling**: Aggregated spend by customer ID (identifying Customer 10299 and 10449 as top revenue drivers) and visualized unit price tiers.
+
+### 18. Employee Master & Workshop Training Analytics (`Employee_Master_and_Workshops_Analytics.ipynb`)
+- **Workforce Demographic Baseline**: Analyzed 50 corporate personnel across 5 core departments (led by Production with 15 staff and Sales with 12), evaluating payroll distributions across Admin, Operations, and Management grades.
+- **Training Program Diagnostics**: Evaluated 152 corporate training attendances totaling \$294,000 in professional development expenditure across 7 specialized courses (Communication Workshop, Introduction to Excel, Advanced Excel, Business Data Analysis, Disciplinary Action, Conflict Management, and Computer Literacy).
+- **Vendor & Supplier Spend**: Categorized investments across training providers, identifying Excel Experts (\$123,000) and Communication Experts (\$58,800) as primary corporate training partners.
+- **Relational Integration & Departmental ROI**: Joined employee records to workshop participation, showing high engagement with 90% (45 of 50) of personnel attending at least one workshop. Operations and Production departments represented the largest total training investment.
+- **Executive Visual Dashboard**: Synthesized departmental spend bars, supplier market share donuts, course popularity rankings, and job-grade participation distributions.
+
+### 19. Date Master & Time Intelligence Analytics (`Date_Master_and_Time_Intelligence_Analytics.ipynb`)
+- **Star-Schema Dimension Modeling**: Complete temporal audit of a continuous 2,557-day calendar dimension table spanning 7 full calendar years (2018-01-01 through 2024-12-31).
+- **Dimensional Feature Engineering**: Precomputed calendar quarters (`Q1`–`Q4`), fiscal quarters (`FQ1`–`FQ4`), day-of-year indices (1–366), astronomical seasons, and business day vs. weekend binary flags (`Is_Weekend`).
+- **Operational Scheduling & Working Days**:
+  - Validated leap-year impacts in 2020 (366 days) and 2024 (366 days).
+  - Calculated exact business day allocations per year (~261 business days vs. ~104 weekend days), providing standard trading and operational baselines.
+  - Formulated a 7-year monthly working day heatmap identifying monthly seasonality and working-day fluctuations.
+- **Time Intelligence Architecture**: Established best practices for role-playing date dimension tables in relational data warehouses, ensuring zero-gap continuous dates for reliable period-over-period (YoY, MoM, QoQ) rollups.
 
 ---
 
