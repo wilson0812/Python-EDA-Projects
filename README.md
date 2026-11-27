@@ -30,6 +30,7 @@ This repository contains all completed and fully executed assignment notebooks a
 | [`Employee_Master_and_Workshops_Analytics.ipynb`](Employee_Master_and_Workshops_Analytics.ipynb) | **Employee Master & Workshops Analytics** | Integrated workforce demographics (50 employees) and corporate training logs (152 workshop sessions): departmental training investments, course popularity, vendor expenditure, and job grade participation. | ✅ **100% Complete** |
 | [`Date_Master_and_Time_Intelligence_Analytics.ipynb`](Date_Master_and_Time_Intelligence_Analytics.ipynb) | **Date Master & Time Intelligence Analytics** | Star-schema calendar dimension table modeling across 2,557 days (2018–2024): calendar quarters, business days vs weekend allocations, leap-year handling (2020 & 2024), and time-series seasonality metrics. | ✅ **100% Complete** |
 | [`Training_Sales_Analytics_Assignment.ipynb`](Training_Sales_Analytics_Assignment.ipynb) | **Training Sales Analytics** | Multichannel retail sales EDA on 15,000 orders (2012–2014): channel & regional profitability, product category rankings, top manufacturers, promotion effectiveness, and monthly/quarterly trend analysis. | ✅ **100% Complete** |
+| [`TrainingSample2_Bike_Sales_Analytics.ipynb`](TrainingSample2_Bike_Sales_Analytics.ipynb) | **Bike & Sporting Goods Sales Analytics** | Global bike sales EDA on ~61,000 transactions: regional/sub-regional revenue, customer and market rankings, product category & model mix, color preferences, pricing & discount analysis, and yearly/quarterly/monthly time-series with heatmap seasonality. | ✅ **100% Complete** |
 | [`Sales_Data.csv`](Sales_Data.csv) | **Dataset** | Sales transactions dataset containing regional sales, quantities, unit prices, and targets. | 📊 **Included** |
 | [`Employee_Master_Dataset.csv`](Employee_Master_Dataset.csv) | **Dataset** | Comprehensive 110-employee master dataset with parsed email IDs, departments, bonuses, and locations. | 📊 **Included** |
 | [`Quarterly_Sales_Data.csv`](Quarterly_Sales_Data.csv) | **Dataset** | Quarterly sales records across 5 sales representatives in wide cross-tabulated format. | 📊 **Included** |
@@ -240,6 +241,17 @@ This repository contains all completed and fully executed assignment notebooks a
 - **Promotion Effectiveness**: Assessed 15+ seasonal promotions (European Spring, North America Spring, Asian Spring, etc.) by order volume and revenue generated.
 - **Time-Series Trends**: Monthly and quarterly sales/profit trend lines (2012–2014) with YoY comparisons and seasonality analysis.
 - **Distribution & Correlation Analysis**: Histograms (log scale), boxplots by channel, and a 6-variable correlation heatmap highlighting relationships between unit cost, price, quantity, and profitability.
+
+### 21. Bike & Sporting Goods Sales Analytics (`TrainingSample2_Bike_Sales_Analytics.ipynb`)
+- **Dataset Overview**: ~61,000 global sales transactions for bikes and accessories (Mountain Bikes, Road Bikes, Clothing, Accessories) across Region, SubRegion, Market, Customer, Business Segment, Model, and Color dimensions with ListPrice, UnitPrice, and OrderQty.
+- **Regional & Geographic Performance**: Revenue and order count ranked across all Regions, top 15 Sub-Regions, and top 15 Markets; horizontal bar charts reveal North America and Europe dominance.
+- **Customer & Segment Analysis**: Top 15 customers ranked by revenue and order volume; business segment comparison (Reseller, Online, etc.) showing revenue contribution and discount depth.
+- **Product Category & Model Mix**: Category-level revenue vs. order count (Bikes dominate), top 15 individual models by revenue, and stacked regional category heatmap.
+- **Color Preferences**: Revenue and order count broken down by product color to understand demand-side aesthetics.
+- **Pricing & Discount Analysis**: List vs. Unit price distributions (log-scale), discount percentage histogram, and boxplot of discount by category revealing margin-giving patterns.
+- **Order Quantity Patterns**: Distribution of order quantities per transaction and average quantity by business segment.
+- **Time-Series Trends**: Monthly revenue line chart with fill, annual revenue and order count bars, quarterly seasonality bars, and a Year × Month revenue heatmap for seasonal pattern detection.
+- **Correlation Matrix**: 5-variable heatmap (ListPrice, UnitPrice, Discount, OrderQty, Revenue) quantifying inter-variable relationships.
 
 ---
 
